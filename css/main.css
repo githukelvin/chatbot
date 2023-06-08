@@ -52,27 +52,27 @@ body {
   padding: 16px 0;
   position: relative;
 }
-.chatbot header .lang {
+.chatbot header .src {
   display: flex;
   flex-direction: column;
   position: absolute;
   left: 20px;
   top: 10px;
 }
-.chatbot header .lang select {
+.chatbot header .src select {
   border-radius: 5px;
   background: #6400C8;
   font-weight: 500;
   color: #fff;
 }
-.chatbot header .src {
+.chatbot header .lang {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 40px;
   top: 10px;
 }
-.chatbot header .src select {
+.chatbot header .lang select {
   border-radius: 5px;
   color: #fff;
   background: #6400C8;
@@ -82,7 +82,7 @@ body {
   color: #fff;
   font-size: 1.4rem;
   position: relative;
-  left: 140px;
+  text-align: center;
   top: 5px;
 }
 .chatbot header #closeChat {

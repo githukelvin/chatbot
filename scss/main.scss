@@ -20,7 +20,7 @@
     }
     header {
         color: #fff;
-        .lang{
+        .src{
             display:flex;
             flex-direction:column;
             position: absolute;
@@ -34,7 +34,7 @@
                 color:#fff;
             }
         }
-         .src {
+         .lang {
             display:flex;
             flex-direction:column;
              position: absolute;
@@ -55,7 +55,7 @@
             color: #fff;
             font-size: 1.4rem;
             position: relative;
-            left: 140px;
+            text-align: center;
             top: 5px;
         }
 
