@@ -1,4 +1,4 @@
-let apiKey= "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";
+let apiKey= "af3e931af7msh969a6d607ccfbcfp138f9ajsn511cb713654e";
 
 
 export default apiKey;

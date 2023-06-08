@@ -1,6 +1,10 @@
-import apiKey from "./apiKey.js";
+// import apiKey from "./apiKey.js";
+
+let apiKey= "af3e931af7msh969a6d607ccfbcfp138f9ajsn511cb713654e";
+
 
 // let link ='https://api.openai.com/v1/chat/completions';
+
 let openchatBot= document.querySelector("#open")
 let closechatBot= document.querySelector("#close")
 let closeChat= document.querySelector("#closeChat")
@@ -50,7 +54,7 @@ let fetchData=async (message,type,source)=>{
 	method: 'POST',
 	headers: {
 		'content-type': 'application/x-www-form-urlencoded',
-		'X-RapidAPI-Key': 'af3e931af7msh969a6d607ccfbcfp138f9ajsn511cb713654e',
+		'X-RapidAPI-Key':apiKey,
 		'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
 	},
 	body: new URLSearchParams({
@@ -66,8 +70,8 @@ try {
    let  res= JSON.parse(result)
 	dispMessage(res.data.translatedText,'incoming')
     ul.scrollTo(0,ul.scrollHeight)
-} catch (error) {
-	console.error(error);
+}catch(error){
+	dispMessage("The Query failed please check Your Inputs 😥😥",'incoming','error')
 }
 
 
@@ -79,7 +83,6 @@ sendBtn.addEventListener("click",()=>{
     let input= text.value.trim();
     let langI =lang.value;
     let source = souc.value;
-    console.log(langI)
     //check if input is empty
     if(input.length==0){
          dispMessage("Enter a input or message","incoming") 
@@ -155,7 +158,9 @@ closechatBot.addEventListener("click",()=>{
 })
 
 closeChat.addEventListener('click',()=>{
+    openchatBot.classList.toggle("active")
     chatbot.classList.remove("active")
+    closechatBot.classList.remove("active")
 })
 
 

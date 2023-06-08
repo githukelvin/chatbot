@@ -5,10 +5,10 @@
 .chatbot {
     background: #d9ed92;
     position: fixed;
-    left: 40px;
+    right: 40px;
     width: 420px;
     bottom: 100px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 0 128px 0 rgba($color: #000000, $alpha: .1),
         0 32px 64px -48px rgba($color: #000000, $alpha: .5);
          transform-origin: bottom left;
@@ -67,6 +67,8 @@
         height: 510px;
         overflow-y: auto;
         padding: 15px 20px 70px;
+        border-radius: 20px;
+
 
         .chat{
             display: flex;
@@ -99,6 +101,9 @@
                 border-radius: 10px 10px 10px 0;
                 color: #000;
             background: #e6b8a2;
+        }
+        .error{
+            color:rgb(122, 11, 11);
         }
         
 
@@ -157,7 +162,7 @@
 
     $sive:50px;
     position: fixed;
-    left: 40px;
+    right: 40px;
     bottom: 40px;
     width: $sive;
     height: $sive;
@@ -219,11 +224,13 @@
         }
         header{
              #closeChat {
+                right: 10px;
                  display: block;
              }
         }
        
     }
+  
     
 }
 // material styling
