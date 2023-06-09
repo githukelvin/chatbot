@@ -20,45 +20,45 @@
     }
     header {
         color: #fff;
-        .src{
-            display:flex;
-            flex-direction:column;
-            position: absolute;
-            left: 20px;
-            top: 10px;
+        width: 100%;
+       
+        background: #0d0a0b;
 
-            select{
-                border-radius: 5px;
-                background: #6400C8;
-                font-weight: 500;
-                color:#fff;
-            }
-        }
-         .lang {
-            display:flex;
-            flex-direction:column;
-             position: absolute;
-             right: 40px;
-             top: 10px;
-
-             select {
-                 border-radius: 5px;
-                 color:#fff;
-                 background: #6400C8;
-                 font-weight: 500;
+       .info{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           padding: 16px 0;
+           align-items: center;
+         @media screen {
+             @media (max-width: 490px) {
+                width: 90%;
              }
          }
-        background: #0d0a0b;
-        padding: 16px 0;
-        position: relative;
-        h2 {
-            color: #fff;
-            font-size: 1.4rem;
-            position: relative;
-            text-align: center;
-            top: 5px;
-        }
 
+         .src,.lang {
+             display: flex;
+             flex-direction: column;
+             select {
+                 border-radius: 5px;
+                 background: #6400C8;
+                 font-weight: 500;
+                 color: #fff;
+                 cursor: pointer;
+             }
+         }
+
+
+
+         h2 {
+             color: #fff;
+             font-size: 1.4rem;
+             position: relative;
+             // text-align: center;
+             top: 5px;
+         }
+
+       }
         #closeChat{
             position: absolute;
             right: 30px;

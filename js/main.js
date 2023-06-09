@@ -151,16 +151,14 @@ openchatBot.addEventListener("click",()=>{
     chatbot.classList.add("active")
 })
 
-closechatBot.addEventListener("click",()=>{
+function closed(){
     openchatBot.classList.toggle("active")
     closechatBot.classList.toggle("active")
     chatbot.classList.remove("active")
-})
+}
 
-closeChat.addEventListener('click',()=>{
-    openchatBot.classList.toggle("active")
-    chatbot.classList.remove("active")
-    closechatBot.classList.remove("active")
-})
+closechatBot.addEventListener("click",closed)
+
+closeChat.addEventListener('click',closed)
 
 

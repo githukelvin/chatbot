@@ -125,7 +125,7 @@ body {
   background: #e6b8a2;
 }
 .chatbot .chatbox .incoming .error {
-  color: rgb(122, 11, 11);
+  color: #7a0b0b;
 }
 .chatbot .chatbox .outcoming {
   margin: 20px 0;
@@ -231,4 +231,4 @@ body {
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-}/*# sourceMappingURL=main.css.map */
+}
